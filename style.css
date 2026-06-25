@@ -1,12 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
 h1 {
-    color: blue;
+    color: #07c9d7;
     margin-bottom: 20px;
 }
+
 .tagline {
     font-weight: bold;
-    font-size: large;
+    font-size: 1.2rem;
 }
+
 .profile-pic {
     border: 5px solid black;
     padding: 5px;
+    width: 300px;
+}
+
+body {
+    background-color: rgb(16, 153, 6);
 }
