@@ -22,3 +22,10 @@ body {
     background-color: rgb(16, 153, 6);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.nav-list
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+}
