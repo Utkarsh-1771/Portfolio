@@ -4,7 +4,7 @@
 
 h1 {
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .tagline {
@@ -25,14 +25,15 @@ body {
 
 .nav-list {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: 50px;
+    justify-content: space-between;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .site-header {
     display: flex;
-    justify-content: space-between;
+    justify-content:left;
     align-items: center;
 }
 
@@ -42,4 +43,11 @@ a {
 
 .github-link {
     color: #155b04;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    list-style: none;
 }
