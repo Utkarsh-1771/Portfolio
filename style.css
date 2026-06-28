@@ -33,7 +33,7 @@ body {
 
 .site-header {
     display: flex;
-    justify-content:left;
+    justify-content:flex-start;
     align-items: center;
 }
 
@@ -47,7 +47,7 @@ a {
 
 .hobbies-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 20px;
     list-style: none;
 }
