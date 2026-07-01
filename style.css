@@ -92,3 +92,8 @@ a:hover {
     gap: 20px;
     list-style: none;
 }
+
+.main-nav {
+    position: sticky;
+    top:0;
+}
