@@ -79,7 +79,7 @@ a:hover {
 }
 
 .github-link {
-    color: #155b04;
+    color: #2abd05;
 }
 
 .github-link:hover {
@@ -95,5 +95,23 @@ a:hover {
 
 .main-nav {
     position: sticky;
-    top:0;
+    top: 0;
+    background-color: var(--bg-color);
+    padding: 10px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.footer-elements {
+    background-color: rgba(1, 10, 51, 0.8);
 }
