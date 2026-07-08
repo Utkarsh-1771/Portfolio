@@ -64,7 +64,7 @@ body {
 }
 
 .nav-list a:hover {
-    background: linear-gradient(#4284DB,#29EAC4);
+    background: linear-gradient(#4284DB, #29EAC4);
     color: white;
     transform: translateY(-2px);
 }
@@ -170,4 +170,37 @@ section {
     animation: fadein 2s ease-in-out;
     animation-delay: 0.2s;
     animation-fill-mode: backwards;
+}
+
+.welcome {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome a i {
+    font-size: 30px;
+}
+
+.welcome p {
+    font-size: 1.5rem;
+}
+
+.start-nav {
+    list-style: none;
+}
+
+.start-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
