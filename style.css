@@ -3,10 +3,16 @@
 }
 
 :root {
-    --accent-color: #ea0202;
-    --bg-color: linear-gradient(to right, #e3e0d2, #FFFFFF);
-    --header-color: #000000;
-    --main-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --accent-color: #2563eb;
+    --accent-hover: #1d4ed8;
+    --bg-color: #f8fafc;
+    --surface: #ffffff;
+    --header-color: #0f172a;
+    --text-color: #334155;
+    --border: #e2e8f0;
+    --shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    --main-font: 'Inter', 'Segoe UI', sans-serif;
+    --button-color: #ea0202;
 }
 
 @keyframes fadein {
@@ -39,20 +45,21 @@ html {
 }
 
 .profile-pic {
-    border: 5px solid var(--header-color);
+    border: 4px solid white;
     padding: 5px;
-    width: 500px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    width: 30rem;
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.12);
 }
 
 body {
     background: var(--bg-color);
+    color: var(--text-color);
     font-family: var(--main-font);
 }
 
 .nav-list {
     display: flex;
-    gap: 100px;
+    gap: 30px;
     justify-content: flex-start;
     list-style: none;
     flex-wrap: wrap;
@@ -64,20 +71,20 @@ body {
     padding: 8px 16px;
     border-radius: 10px;
     text-decoration: none;
-    box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav-list a:hover {
-    background: linear-gradient(#4284DB, #29EAC4);
+    background: var(--accent-hover);
     color: white;
-    transform: translateY(-50px);
+    transform: translateY(-3px);
     box-shadow: 0px 8px 16px 7px rgba(0, 0, 0, 0.2);
 }
 
 .site-header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 200px;
     align-items: center;
 }
@@ -88,7 +95,7 @@ a {
 }
 
 a:hover {
-    color: #1d07e1;
+    color: var(--accent-hover);
 }
 
 @media(min-width:768px) {
@@ -115,6 +122,9 @@ a:hover {
     top: 0;
     background: var(--bg-color);
     padding: 10px;
+    background: white;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .04);
 }
 
 .projects-grid {
@@ -124,20 +134,22 @@ a:hover {
 }
 
 .project-card {
-    background: linear-gradient(#FFEEEE, #DDEFBB);
-    border-radius: 8px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
     padding: 20px;
-    box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px 7px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.12);
 }
 
 .footer-elements {
-    background: linear-gradient(#000000, #434343);
+    background: #0f172a;
+    color: white;
 }
 
 section {
@@ -156,7 +168,7 @@ section {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
     transition: background-color 0.3s ease;
 }
 
@@ -223,7 +235,7 @@ section {
     padding: 10px 30px;
     border-radius: 10px;
     text-decoration: none;
-    box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -249,14 +261,15 @@ section {
     align-items: center;
     background-color: var(--accent-color);
     color: white;
-    padding: 10px 10px;
-    border-radius: 10px;
+    padding: 12px 24px;
+    border-radius: 12px;
     margin-top: 20px;
+    font-weight: 600;
 }
 
 .resume a {
     text-decoration: none;
-    box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -296,7 +309,7 @@ a.resume-overlay:hover {
 
 .video-wrapper {
     position: relative;
-    width: 500px;
+    width: 30rem;
 }
 
 #mute-btn {
