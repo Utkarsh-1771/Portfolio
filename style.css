@@ -25,6 +25,12 @@
     }
 }
 
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
 h1 {
     font-size: 2rem;
     color: var(--header-color);
@@ -42,6 +48,7 @@ html {
 }
 
 .tagline {
+    display: flex;
     font-weight: bold;
     font-size: 1.2rem;
     animation: fadein 1s ease;
@@ -53,6 +60,7 @@ html {
     border: 4px solid white;
     padding: 5px;
     width: 30rem;
+    max-width: 100%;
     box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.12);
 }
 
@@ -64,7 +72,7 @@ body {
 
 .nav-list {
     display: flex;
-    gap: 14px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -94,7 +102,7 @@ body {
 .site-header {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 20px;
     padding: 0;
     justify-content: space-between;
     align-items: center;
@@ -116,7 +124,8 @@ a:hover {
 
     .site-header {
         flex-direction: row;
-        justify-content: left;
+        justify-content: space-between;
+        gap: 40px;
     }
 }
 
@@ -321,6 +330,7 @@ a.resume-overlay:hover {
 .video-wrapper {
     position: relative;
     width: 30rem;
+    max-width: 100%;
 }
 
 #mute-btn {
