@@ -51,6 +51,8 @@ html {
     display: flex;
     font-weight: bold;
     font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
     animation: fadein 1s ease;
     animation-delay: 0.3s;
     animation-fill-mode: backwards;
@@ -352,4 +354,11 @@ a.resume-overlay:hover {
 
 #mute-btn:hover {
     background: rgba(0, 0, 0, 0.8);
+}
+
+.my-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
