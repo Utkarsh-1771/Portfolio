@@ -48,11 +48,9 @@ html {
 }
 
 .tagline {
-    display: flex;
     font-weight: bold;
     font-size: 1.2rem;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     animation: fadein 1s ease;
     animation-delay: 0.3s;
     animation-fill-mode: backwards;
@@ -330,9 +328,12 @@ a.resume-overlay:hover {
 }
 
 .video-wrapper {
+    display: flex;
     position: relative;
     width: 30rem;
     max-width: 100%;
+    flex-wrap: wrap;
+    scroll-behavior: auto;
 }
 
 #mute-btn {
@@ -357,8 +358,9 @@ a.resume-overlay:hover {
 }
 
 .my-name {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+}
+
+.profile-section {
+    min-width: 0;
 }
