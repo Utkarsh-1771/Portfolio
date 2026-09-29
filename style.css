@@ -364,3 +364,37 @@ a.resume-overlay:hover {
 .profile-section {
     min-width: 0;
 }
+
+.github-card {
+    width: 100%;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.github-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.github-card-header h2 {
+    margin: 0;
+    color: #0f172a;
+}
+
+.github-card-header a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.github-chart {
+    display: block;
+    width: 100%;
+    height: auto;
+}
